@@ -1,0 +1,118 @@
+{
+  "status": "reported_experiment_v1.0.0",
+  "dataset_roles": {
+    "training": "adress_train",
+    "source_domain_validation": "adress_validation",
+    "external_evaluation": [
+      "lu_external",
+      "pitt_external"
+    ]
+  },
+  "proposal_generation": {
+    "routes": [
+      "chosen",
+      "rejected"
+    ],
+    "candidates_per_route": 40,
+    "temperature": 1.2,
+    "max_new_tokens": 320
+  },
+  "proxy_scoring": {
+    "clip_threshold": 0.19,
+    "chunk_weight": 0.8,
+    "ad_residual_threshold": 0.14,
+    "hc_residual_threshold": 0.16,
+    "risk_band_multiplier": 0.4,
+    "safe_band_multiplier": 1.0
+  },
+  "preference_pairs": {
+    "locked_sources": 108,
+    "locked_pairs": 646,
+    "pairs_per_source": [
+      5,
+      6
+    ]
+  },
+  "dpo": {
+    "epochs": 3,
+    "learning_rate": 1e-05,
+    "per_device_batch_size": 1,
+    "gradient_accumulation_steps": 8,
+    "beta": 0.2,
+    "label_smoothing": 0.1,
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05
+  },
+  "augmentation_inference": {
+    "temperature": 1.2,
+    "max_new_tokens": 320,
+    "samples_per_source": 2
+  },
+  "icl": {
+    "methods": [
+      "direct",
+      "rewrite",
+      "imitation"
+    ],
+    "seeds": [
+      5942,
+      3012,
+      4951,
+      2921,
+      9032
+    ],
+    "temperature": 1.2,
+    "max_new_tokens": 320,
+    "samples_per_source": 2
+  },
+  "downstream_classifier": {
+    "max_length": 320,
+    "batch_size": 32,
+    "epochs": 20,
+    "learning_rate": 2e-05,
+    "patience": 8,
+    "generation_seeds": 5,
+    "classifier_seeds": 5,
+    "checkpoint_selection": "one_explicit_validation_input_only"
+  },
+  "eda": {
+    "seeds": [
+      1077,
+      2024,
+      3407,
+      4994,
+      8888
+    ],
+    "generated_samples_per_source": 2,
+    "training_mode": "full_training_table",
+    "max_length": 320
+  },
+  "cda": {
+    "seeds": [
+      42,
+      52,
+      62,
+      72,
+      82
+    ],
+    "max_length": 320,
+    "epochs": 30,
+    "patience": 5,
+    "batch_size": 8,
+    "evaluation_batch_size": 16,
+    "learning_rate": 0.0001,
+    "alpha": 0.5,
+    "mu": 0.5,
+    "validation_metric": "accuracy"
+  },
+  "statistical_analysis": {
+    "external_average": "unweighted Lu-Pitt cohort-level mean within seed or bootstrap replicate",
+    "adress_validation_reported_separately": true,
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 20260621,
+    "bootstrap_unit": "diagnosis-stratified evaluation-unit within cohort",
+    "ece_bins": 10,
+    "ece_binning": "equal_frequency"
+  }
+}

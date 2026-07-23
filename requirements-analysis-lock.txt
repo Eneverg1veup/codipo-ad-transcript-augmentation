@@ -1,0 +1,14 @@
+--extra-index-url https://download.pytorch.org/whl/cu118
+
+# Environment used for the complete 63-test local audit on 2026-07-23.
+numpy==1.26.4
+pandas==2.2.2
+openpyxl==3.1.5
+Pillow==10.2.0
+scikit-learn==1.5.2
+scipy==1.14.1
+matplotlib==3.10.1
+PyMuPDF==1.27.2.3
+nltk==3.9.1
+torch==2.4.1+cu118
+

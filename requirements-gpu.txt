@@ -1,0 +1,27 @@
+--extra-index-url https://download.pytorch.org/whl/cu118
+
+# Reported DPO/LLaVA stack plus compatible runtime constraints.
+torch==2.4.1+cu118
+torchvision==0.19.1+cu118
+transformers==4.56.2
+trl==0.27.1
+peft==0.17.1
+datasets>=3.0.0,<5
+accelerate>=1.4.0,<2
+safetensors>=0.4.3,<1
+
+# Data, baseline, proxy and manuscript-analysis dependencies.
+numpy==1.26.4
+pandas==2.2.2
+openpyxl==3.1.5
+Pillow==10.2.0
+scikit-learn==1.5.2
+scipy==1.14.1
+matplotlib==3.10.1
+PyMuPDF==1.27.2.3
+nltk==3.9.1
+modelscope>=1.20.0,<2
+
+# SAM 3 is intentionally not pinned here. Install the upstream SAM 3 package
+# matching the checkpoint distribution, as described in docs/environment.md.
+

@@ -1,0 +1,13 @@
+method,method_display,joint_pass_mean,joint_pass_sd,joint_pass_min,joint_pass_max,locked_method_display,overall_f1_mean_percent,overall_f1_ci_low,overall_f1_ci_high,n_bootstrap,source_definition
+CoDiPO,CoDiPO,0.0824074074074073,0.0215663235163928,0.0509259259259259,0.1064814814814814,CoDiPO,83.01356075339328,79.57278982392525,86.23018179988652,10000,joint proxy feasibility plus locked Lu-Pitt external-cohort F1
+Cosine as X,Cosine sim. as X,0.0768518518518518,0.0286513860125292,0.037037037037037,0.1111111111111111,w/o residual decomposition,79.58940889911597,75.85504207650467,83.04358356014792,10000,joint proxy feasibility plus locked Lu-Pitt external-cohort F1
+Cosine-only Preference,Cosine-only,0.061111111111111,0.0136554455590302,0.0462962962962962,0.0833333333333333,Cosine-only preference,79.37396170746351,75.85479880334259,82.62679747814727,10000,joint proxy feasibility plus locked Lu-Pitt external-cohort F1
+EDA,EDA,0.0,0.0,0.0,0.0,EDA,76.97887810919474,72.39637513042474,80.9152462676636,10000,joint proxy feasibility plus locked Lu-Pitt external-cohort F1
+ICL Imitate,ICL Imitation,0.0212962962962962,0.0025357525810424,0.0185185185185185,0.0231481481481481,ICL Imitation,79.12630083387216,75.78856953552943,82.15440735892378,10000,joint proxy feasibility plus locked Lu-Pitt external-cohort F1
+ICL Rewrite,ICL Rewrite,0.0249999999999999,0.0052785899310145,0.0185185185185185,0.0324074074074074,ICL Rewrite,78.75027728645915,75.99111218125273,81.35010755860263,10000,joint proxy feasibility plus locked Lu-Pitt external-cohort F1
+Vanilla Generation w/o DPO,Vanilla Generation w/o DPO,0.0638888888888888,0.0180496191570536,0.0462962962962962,0.0925925925925925,"w/o DPO, vanilla augmentation",80.12754040503569,76.4855909214069,83.41598821047677,10000,joint proxy feasibility plus locked Lu-Pitt external-cohort F1
+XYZ Hard Filtering w/o DPO,Hard Filter,0.274074074074074,0.0205484639084926,0.25,0.3009259259259259,"w/o DPO, XYZ hard filtering",80.19296029240381,76.61677856340646,83.47696727315929,10000,joint proxy feasibility plus locked Lu-Pitt external-cohort F1
+w/o X,w/o X,0.0796296296296296,0.0291703407444877,0.0462962962962962,0.125,CoDiPO w/o X,79.41353352750025,75.47177264721039,82.98588027641905,10000,joint proxy feasibility plus locked Lu-Pitt external-cohort F1
+w/o YZ,w/o YZ,0.0592592592592592,0.0225382619345149,0.037037037037037,0.0833333333333333,CoDiPO w/o YZ,80.12861267582097,76.39302348616211,83.55454112507248,10000,joint proxy feasibility plus locked Lu-Pitt external-cohort F1
+
+

@@ -1,0 +1,10 @@
+method_raw,method_display,method,residual_similarity_mean,residual_similarity_sd
+CoDiPO,CoDiPO,CoDiPO,0.1767969817501953,0.1734426522049815
+w/o X,w/o X,w/o X,0.1890061310992153,0.1661055921445487
+w/o Y/Z,w/o YZ,w/o Y/Z,0.1687117374644558,0.1735718366400594
+Cos-X,Cosine sim. as X,Cosine sim. as X,0.1735947748535531,0.1622873343312711
+Cosine-only,Cosine-only,Cosine-only,0.1923030889965107,0.1673418050341792
+Vanilla,Vanilla,Vanilla,0.1928257299841064,0.1724373147881913
+Hard filter,Hard Filter,Hard filter,0.132347747974639,0.1793585608016759
+
+

@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codipo-ad-transcript-augmentation"
+version = "1.0.0"
+description = "CoDiPO code for transcript augmentation in Alzheimer's disease detection"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [
+  {name = "Puzhen Su", email = "supuzhen@163.com"},
+  {name = "Yongzhu Miao"},
+  {name = "Haoran Yin"},
+  {name = "Jintao Tang"},
+  {name = "Shasha Li"},
+  {name = "Ting Wang"},
+]
+maintainers = [
+  {name = "Puzhen Su", email = "supuzhen@163.com"},
+]
+dependencies = [
+  "datasets",
+  "numpy",
+  "openpyxl",
+  "pandas",
+  "peft==0.17.1",
+  "Pillow",
+  "scikit-learn",
+  "torch",
+  "transformers==4.56.2",
+  "trl==0.27.1",
+]
+
+[project.optional-dependencies]
+proxy-scoring = ["modelscope", "scikit-learn"]
+eda = ["nltk"]
+manuscript-analysis = ["matplotlib", "PyMuPDF", "scipy"]
+
+[project.urls]
+Homepage = "https://github.com/Eneverg1veup/codipo-ad-transcript-augmentation"
+Repository = "https://github.com/Eneverg1veup/codipo-ad-transcript-augmentation"
+
+[tool.setuptools.packages.find]
+where = ["src"]

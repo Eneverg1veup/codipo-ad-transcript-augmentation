@@ -1,0 +1,4 @@
+figure,external_average_source,cohort_source,k_scaling_source,metrics,external_uncertainty,cohort_marker,k_scaling_uncertainty
+Figure4_cross_cohort_performance_k_scaling_external_20260720,external_cohort_bootstrap_method_metrics.csv,cohort_generation_level_method_metrics_external.csv,k_scaling_f1_macro_external_pitt_lu_summary.csv,Accuracy; Precision; Sens.; F1; Specificity; AUROC; AUPRC,n=10000 percentile bootstrap 95% CI,locked cohort mean without interval,sample SD across run-level evaluations
+
+

@@ -1,0 +1,9 @@
+target_method,comparator_label,dataset,cohort,metric,observed_delta,bootstrap_mean_delta,bootstrap_sd_delta,ci_low,ci_high,p_bootstrap_two_sided,n_bootstrap,bootstrap_seed,delta_direction,comparator
+CoDiPO,w/o X,ExternalCohortAverage,External-cohort average,f1,0.0360002722589303,0.0362060039320726,0.0076409927456022,0.0222522772541376,0.0522258742755917,0.0001999800019998,10000,20260621,positive favors CoDiPO,CoDiPO w/o X
+CoDiPO,w/o YZ,ExternalCohortAverage,External-cohort average,f1,0.028849480775723,0.0289746713191292,0.0075279527645469,0.0153208771943085,0.0445907582399853,0.0001999800019998,10000,20260621,positive favors CoDiPO,CoDiPO w/o YZ
+CoDiPO,Cosine sim. as X,ExternalCohortAverage,External-cohort average,f1,0.0342415185427731,0.0345261538953516,0.0069750807662021,0.0213880567555185,0.0486964233410392,0.0001999800019998,10000,20260621,positive favors CoDiPO,w/o residual decomposition
+CoDiPO,Cosine-only,ExternalCohortAverage,External-cohort average,f1,0.0363959904592977,0.0365639779369282,0.0065358413178557,0.0238232996247325,0.0494885874496898,0.0001999800019998,10000,20260621,positive favors CoDiPO,Cosine-only preference
+CoDiPO,Vanilla,ExternalCohortAverage,External-cohort average,f1,0.0288602034835758,0.0289682330554273,0.0050730949001092,0.0191911446393573,0.0391451487536492,0.0001999800019998,10000,20260621,positive favors CoDiPO,"w/o DPO, vanilla augmentation"
+CoDiPO,Hard Filter,ExternalCohortAverage,External-cohort average,f1,0.0282060046098946,0.0283581311870719,0.0066179022776643,0.0165324024808115,0.04221002506998,0.0001999800019998,10000,20260621,positive favors CoDiPO,"w/o DPO, XYZ hard filtering"
+
+
