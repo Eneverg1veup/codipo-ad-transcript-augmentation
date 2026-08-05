@@ -2,7 +2,7 @@
 
 Research code accompanying:
 
-> **Consistency and diversity preference optimization for transcript
+> **Consistency and diversity preference optimization for data
 > augmentation in Alzheimer's disease detection**
 
 CoDiPO uses image-evidence coverage and residual source--candidate similarity

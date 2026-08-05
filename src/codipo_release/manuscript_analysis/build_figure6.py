@@ -705,7 +705,12 @@ def build_figure() -> None:
     proxy.draw_utility_panel(ax_d, utility)
     for annotation in list(ax_d.texts):
         annotation.remove()
-    ax_d.set_title("Joint proxy feasibility and external F1", loc="left", fontweight="bold", pad=5)
+    ax_d.set_title(
+        "Joint proxy feasibility and held-out cross-cohort F1",
+        loc="left",
+        fontweight="bold",
+        pad=5,
+    )
     ax_d.set_ylabel("External-cohort average F1 (%)")
     for label, ax in zip("abcd", [ax_a, ax_b, ax_c, ax_d]):
         proxy.panel_label(ax, label, x=-0.19 if label == "c" else -0.12, y=1.12 if label == "c" else 1.06)

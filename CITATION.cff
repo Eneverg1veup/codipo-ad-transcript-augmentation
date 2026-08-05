@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it using the metadata below."
-title: "CoDiPO: Consistency and diversity preference optimization for transcript augmentation in Alzheimer's disease detection"
+title: "CoDiPO: Consistency and diversity preference optimization for data augmentation in Alzheimer's disease detection"
 type: software
 version: 1.0.0
 authors:
@@ -14,6 +14,14 @@ authors:
     affiliation: "College of Computer Science and Technology, National University of Defense Technology"
   - given-names: "Haoran"
     family-names: "Yin"
+    affiliation: "College of Computer Science and Technology, National University of Defense Technology"
+  - given-names: "Chunxi"
+    family-names: "Guo"
+    email: "chunxi@nudt.edu.cn"
+    affiliation: "College of Computer Science and Technology, National University of Defense Technology"
+  - given-names: "Kang"
+    family-names: "Tang"
+    email: "tangkang21@nudt.edu.cn"
     affiliation: "College of Computer Science and Technology, National University of Defense Technology"
   - given-names: "Jintao"
     family-names: "Tang"

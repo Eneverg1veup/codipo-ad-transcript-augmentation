@@ -563,7 +563,11 @@ def draw_balance_distance_panel(
 
     ax.set_xlabel("Standardized multi-metric distance from CoDiPO")
     ax.set_ylabel("External-cohort average F1 (%)")
-    ax.set_title("Multi-metric distance and external F1", loc="left", fontweight="bold")
+    ax.set_title(
+        "Multi-metric distance and held-out cross-cohort F1",
+        loc="left",
+        fontweight="bold",
+    )
     clean_axis(ax, "both")
 
 

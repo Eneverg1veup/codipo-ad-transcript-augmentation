@@ -821,7 +821,12 @@ def draw_knn_f1_panel(
     ax.set_ylim(*ylim)
     ax.set_xlabel("Opposite-class kNN mixing (%)")
     ax.set_ylabel("External-cohort average F1 (%)")
-    ax.set_title("kNN mixing and external F1", loc="left", fontweight="bold", pad=4.0)
+    ax.set_title(
+        "kNN mixing and held-out cross-cohort F1",
+        loc="left",
+        fontweight="bold",
+        pad=4.0,
+    )
     base.clean_axis(ax, "both")
 
 
@@ -1144,8 +1149,8 @@ def build_figure() -> None:
             x=-0.20 if label in {"a", "e"} else -0.18,
             y=1.06,
         )
-    panel_label_figcoords(fig, ax_d, "d", dx=-0.020, dy=0.010)
-    panel_label_figcoords(fig, ax_h, "h", dx=-0.020, dy=0.010)
+    panel_label_figcoords(fig, ax_d, "d", dx=0.000, dy=0.022)
+    panel_label_figcoords(fig, ax_h, "h", dx=0.000, dy=0.022)
 
     left_bbox = outer[0, 0].get_position(fig)
     right_bbox = outer[0, 1].get_position(fig)
